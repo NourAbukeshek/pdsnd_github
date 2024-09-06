@@ -116,6 +116,27 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+def trip_duration_stats(df):
+    """Displays statistics on the total and average trip duration."""
+
+    print('\nCalculating Trip Duration...\n')
+    start_time = time.time()
+
+    # Display total travel time
+    total_travel_time = df['Trip Duration'].sum()
+    print('Total Travel Time:', total_travel_time)
+
+    # Display mean travel time
+    mean_travel_time = df['Trip Duration'].mean()
+    print('Mean Travel Time:', mean_travel_time)
+
+    # Display the most common trip duration
+    common_trip_duration = df['Trip Duration'].mode()[0]
+    print('Most Common Trip Duration:', common_trip_duration)
+
+    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('-'*40)
+
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
