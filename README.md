@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 ### Date created
@@ -16,3 +17,8 @@ Udacity.
 ### Created by
 Noor
 
+=======
+- 
+you should enter the state to git the related data
+modifed by : Nour 6-9-2024
+>>>>>>> refactoring
